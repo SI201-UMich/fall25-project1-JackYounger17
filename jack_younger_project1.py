@@ -42,3 +42,16 @@ def avg_yield_after_fertiliser(data):
             fertilised_rows.append(row)
 
     return avg_yield_per_crop(fertilised_rows)
+
+def yield_differnce(data):
+
+    normal_crop = avg_yield_per_crop(data)
+    fertilisised_crop = avg_yield_after_fertiliser(data)
+
+    difference = {}
+
+    for crop in fertilisised_crop:
+        diff = fertilisised_crop[crop] - normal_crop[crop]
+        difference[crop] = diff
+
+    return difference
