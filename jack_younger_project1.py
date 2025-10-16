@@ -33,3 +33,12 @@ def avg_yield_per_crop(data):
         avg_yield[crop] = total / count
 
     return avg_yield
+
+def avg_yield_after_fertiliser(data):
+
+    fertilised_rows = []
+    for row in data:
+        if row["Fertiliser_used"].lower() == "yes":
+            fertilised_rows.append(row)
+
+    return avg_yield_per_crop(fertilised_rows)
