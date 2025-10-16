@@ -1,3 +1,9 @@
+# Student Name: Jack Younger
+# Umich ID: 88539172
+#
+# I used chat gpt to create my test functions for this assignment. I also used chat gpt for some bug fixing in my code. Chat gpt was also used in my
+# write to csv function as I got stuck in numerous parts.
+
 import csv
 import os
 import unittest
